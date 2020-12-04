@@ -7,10 +7,10 @@ read NUMBER
 
 x=0
 
-while [ $x -lt $NUMBER ]
+while [ "$x" -lt "$NUMBER" ]
 do
 	x=$(( x+1 ))
-	if [ $(($x%2)) -eq 0 ]
+	if [ $((x%2)) -eq 0 ]
 	then
 		echo "$x EVEN"
 	else
